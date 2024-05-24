@@ -1,0 +1,96 @@
+.slider__item {
+  max-width: 100%;
+  height: 650px;
+  /* background-color: white; */
+}
+
+.slider__item-01 {
+  background: linear-gradient(rgba(75, 75, 75, 0.064), rgba(76, 76, 76, 0.411)),
+    url("../assets/all-images/frontPagebackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__item-02 {
+  background: linear-gradient(rgba(75, 75, 75, 0.064), rgba(76, 76, 76, 0.411)),
+    url("../assets/all-images/greyAventador.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__item-03 {
+  background: linear-gradient(rgba(75, 75, 75, 0.064), rgba(76, 76, 76, 0.411)),
+    url("../assets/all-images/wallpaperflare.com_wallpaper\ \(4\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__slider {
+  overflow: hidden;
+  
+}
+
+.container{
+  background-color: #ffffff00;
+}
+
+.slider__content {
+  padding-top: 150px;
+  background-color: #ffffff00;
+  
+}
+
+.slider__content h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  background-color: #ffffff00;
+}
+
+.reserve__btn {
+  /* background: black !important; */
+  border: 1px solid white !important;
+  color: #fff !important;
+  /* border: none; */
+  outline: none;
+}
+
+.reserve__btn a {
+  text-decoration: none;
+  /* border: 1px solid white; */
+  font-weight: 600;
+  color: #fff;
+}
+
+.reserve__btn:hover {
+  background: rgb(75, 75, 75);
+  color: #fff !important;
+  border: 1px solid rgb(75, 75, 75) !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .slider__item {
+    height: 530px;
+    max-width: 100vw;
+  }
+
+  .slider__content {
+    margin-top: -50px;
+  }
+
+  .slider__content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider__item {
+    height: 450px;
+  }
+
+  .slider__content h1 {
+    font-size: 1.5rem;
+  }
+}

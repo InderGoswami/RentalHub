@@ -1,0 +1,58 @@
+.about__section-content{
+  background-color: black;
+}
+
+.about__section-item {
+  background-color: black;
+  column-gap: 3rem;
+}
+
+.about__section-item p i {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.about__img img{
+  animation: movement 4s linear  infinite;
+  background-color: rgba(240, 248, 255, 0);
+  position: relative;
+  top: 0px;
+}
+
+@keyframes movement {
+  0%{
+    top: 0px;
+  }
+  50%{
+    top: -60px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about__section-content h2 {
+    font-size: 1.5rem;
+  }
+  .about__section-item {
+    column-gap: 3rem;
+  }
+  .about__section-item p {
+    font-size: 0.6rem;
+    margin-bottom: 0;
+  }
+
+  .section__description i {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about__img {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about__section {
+    margin-top: 280px;
+  }
+}

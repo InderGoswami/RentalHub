@@ -1,0 +1,115 @@
+.container-fluid{
+    background-color:white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.plate{
+    background-color: white;
+    height: 20vh;
+    width: 3vh;
+}
+#ball{
+    position: relative;
+    background-color: rgb(244, 12, 12);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-self: center;
+    box-shadow: 5px 4px 3px rgb(66, 66, 66);
+    animation-name: ballmovement ;
+    animation-duration: 24s; 
+    animation-timing-function:  0s;
+    animation-iteration-count:  infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+#plate1{
+    position: relative;
+    /* top: -26.6%; left: 98.5%;  */
+    animation-name: movement1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    box-shadow: 5px 4px 3px grey;
+}
+#plate2{
+    position: relative;
+    animation-name: movement2;
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    box-shadow: -5px 4px 3px grey;
+}
+@keyframes movement1 {
+    from{
+        top: 0%;
+    }
+
+    to{
+        top: 80%;
+    }
+}
+@keyframes movement2 {
+    from{
+        top: 0%;
+    }
+
+    to{
+        top: 80%;
+    }
+}
+@keyframes ballmovement {
+    0%{
+        top: 0%;
+        left: 0%;
+        box-shadow: 0px 4px 1px rgb(66, 66, 66);
+    }
+    10%{
+        top: -46%;
+        left: 23%;
+        box-shadow: -3px 4px 1px rgb(66, 66, 66);
+    }
+    16%{
+        top: -20%;
+        left: 47%;
+        box-shadow: -5px 4px 1px rgb(66, 66, 66);
+    }
+    38%{
+        top: 40%;
+        left: -47%;
+        box-shadow: 5px 4px 1px rgb(66, 66, 66);
+    }
+    56%{
+        top: 0%;
+        left: 47%;
+        box-shadow: -5px 4px 1px rgb(66, 66, 66);
+    }
+    66%{
+        top: -46%;
+        left: 0%;
+        box-shadow: 0px 4px 1px rgb(66, 66, 66);
+    }
+    82%{
+        top: 0%;
+        left: -47%;
+        box-shadow: 5px 4px 1px rgb(66, 66, 66);
+    }
+    90%{
+        top: 46%;
+        left: -23%;
+        box-shadow: 2px 4px 1px rgb(66, 66, 66);
+
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+        box-shadow: 0px 4px 1px rgb(66, 66, 66);
+    }
+}

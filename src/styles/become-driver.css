@@ -1,0 +1,62 @@
+.become__driver {
+  background: linear-gradient(rgba(75, 75, 75, 0.064), rgba(76, 76, 76, 0.411)),
+    url("https://i.pinimg.com/originals/e2/48/d7/e248d76b9468b84ed63e5811e0b5180a.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0px;
+}
+
+.row{
+  background-color: #ffffff00;
+}
+
+.become__driver button {
+  /* background: #fff; */
+  border: 1px solid white;
+  color: #fff;
+  font-weight: 600;
+}
+
+.become__driver button:hover{
+  border: 1px solid rgb(75,75,75);
+  background-color: rgb(75,75,75) ;
+}
+
+.become__driver-title {
+  font-size: 2.8rem;
+  color: #fff;
+  line-height: 65px;
+  background-color: #ffffff00;
+}
+
+@media only screen and (max-width: 992px) {
+  .become__driver-title {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .become__driver {
+    padding: 50px 0px;
+  }
+
+  .become__driver-title {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+
+  .become__driver-btn {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .become__driver-img {
+    display: none;
+  }
+  .become__driver {
+    text-align: center;
+  }
+}
